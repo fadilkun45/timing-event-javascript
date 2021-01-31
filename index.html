@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time set interval & out js</title>
+</head>
+<style>
+    .container {
+        display: block ;
+        width: 530px ;
+        margin: 30px auto ;
+    }
+
+    .container button {
+        display: block ;
+        margin: 10px auto ;
+        background-color: #15bbc7 ;
+        width: 200px ;
+        height: 50px ;
+        border: none ;
+        cursor: pointer;
+        text-align: center ;
+    }
+
+    .container p {
+        display: block ;
+        margin: 10px auto ;
+        font-size: 20px ;
+        text-align: center ;
+    }
+
+    .container h1 {
+        display: block ;
+        margin: 10px auto ;
+        font-size: 30px ;
+        text-align: center ;
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <h1>SetTimeout Events trigger</h1>
+        <p>setTimeout adalah sebuah trigger pemanggil events dengan hitungan mundur. SetTimeout bisa di panggil secara otomatis  atau pun dengan manual. untuk yang manual contoh nya menggunakan button dan yang otomatis langsung terpanggil saat user baru meng akses web.</p>
+        <button onclick="tesTimeout()">coba SetTimeout manual</button>
+        <p id="pemberitahuan" ></p>
+        <h1>SetInterval Events trigger</h1>
+        <p>setInterval sama seperti SetTimeout yaitu untuk mentrigger event dengan waktu. namun beda nya kalo SetInterval digunakan untuk mengulang event tergantung berberapa detik si set interval di setting</p>
+        <p>contoh manual</p>
+        <button onclick="manualTrigger()">setInterval manual</button>
+        <p id="randomnumber"></p>
+        <p>contoh otomatis</p>
+        <p id="contohtimer"></p>
+        <h1>ClearInterval Events</h1>
+        <p>seperti namanya fungsi nya untuk menghapus/memberhentikan event SetInterval. sama seperti kedua event diatas event ini bisa dipanggil secara manual ataupun otomatis</p>
+        <p>contoh manual</p>
+        <button onclick="stoptimer()">klik</button>
+        <p id="stoptimer"></p>
+        <p>contoh otomatis</p>
+        <p>akan berhenti saat sudah 14 detik setelah user masuk web</p>
+        <p id="stoptimer2"></p>
+    </div>
+
+    <script src="time.js"></script>
+</body>
+</html>
